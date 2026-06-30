@@ -1,0 +1,169 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #FFF8E1; /* Bege */
+    color: #333;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #2E7D32; /* Verde Escuro */
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Utilidades */
+.hidden {
+    display: none !important;
+}
+
+/* Estilo dos Cards */
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(109, 76, 65, 0.1); /* Sombra suave puxada pro Marrom */
+    border-top: 5px solid #81C784; /* Detalhe Verde Claro */
+    text-align: center;
+}
+
+.card h1, .card h2 {
+    color: #2E7D32;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    color: #6D4C41; /* Marrom */
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Formulários e Inputs */
+.form-group {
+    text-align: left;
+    margin-bottom: 1.2rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #6D4C41;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #81C784;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #2E7D32;
+}
+
+.checkbox-group {
+    text-align: left;
+    margin: 1.5rem 0;
+    background-color: #FFF8E1;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+/* Botões */
+.btn-primary {
+    background-color: #2E7D32;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 25px; /* Bem arredondado */
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #1B5E20;
+}
+
+.btn-secondary {
+    background-color: #4FC3F7; /* Azul água */
+    color: white;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+.btn-secondary:hover {
+    background-color: #03A9F4;
+}
+
+/* Tela de Resultados */
+.score-box {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2E7D32;
+    margin: 1rem 0;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.recommendations {
+    text-align: left;
+    background: #fdfdfd;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.recommendations h3 {
+    color: #6D4C41;
+    margin-bottom: 0.5rem;
+}
+
+.recommendations ul {
+    list-style-type: none;
+}
+
+.recommendations li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}

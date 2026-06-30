@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAgro - Calculadora de Sustentabilidade</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🌿 EcoAgro</div>
+    </header>
+
+    <main class="container">
+        <section id="home-screen" class="card">
+            <h1>Agro forte, futuro sustentável 🌳</h1>
+            <p>Avalie as práticas da sua propriedade rural, descubra seu nível de sustentabilidade e receba dicas personalizadas para equilibrar produção e meio ambiente.</p>
+            <button id="btn-start" class="btn-primary">Começar Avaliação</button>
+        </section>
+
+        <section id="calc-screen" class="card hidden">
+            <h2>Calculadora de Sustentabilidade 💧</h2>
+            <form id="form-agro">
+                <div class="form-group">
+                    <label for="water-input">Consumo diário de água (Litros):</label>
+                    <input type="number" id="water-input" min="0" required placeholder="Ex: 5000">
+                </div>
+
+                <div class="form-group">
+                    <label for="area-input">Área total plantada (Hectares - ha):</label>
+                    <input type="number" id="area-input" min="0" required placeholder="Ex: 10">
+                </div>
+
+                <h3>Práticas Ambientais</h3>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" id="chk-irrigation"> 💧 Usa irrigação inteligente / gotejamento</label>
+                    <label><input type="checkbox" id="chk-rain"> 🌧️ Coleta água da chuva</label>
+                    <label><input type="checkbox" id="chk-reserve"> 🌳 Possui reserva ambiental / mata ciliar</label>
+                    <label><input type="checkbox" id="chk-recycle"> ♻️ Faz reciclagem / descarte correto de embalagens</label>
+                    <label><input type="checkbox" id="chk-solar"> ☀️ Usa energia solar / renovável</label>
+                </div>
+
+                <button type="submit" class="btn-primary">Calcular Pontuação</button>
+            </form>
+        </section>
+
+        <section id="result-screen" class="card hidden">
+            <h2>Resultado da Avaliação</h2>
+            <div class="score-box">
+                <span id="score-number">0</span> pontos
+            </div>
+            <div id="score-status" class="status-badge"></div>
+            
+            <div class="recommendations">
+                <h3>📋 Recomendações:</h3>
+                <ul id="recommendations-list">
+                    </ul>
+            </div>
+
+            <button id="btn-restart" class="btn-secondary">Nova Avaliação</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
